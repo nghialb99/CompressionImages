@@ -8,3 +8,7 @@
 ## Install Tools
 - .NET 6 SDK
 - Visual Studio 2022
+
+## How to use
+- With PNG file -> Save JPG file
+- With JPG file -> Save PNG file -> Save JPG file
