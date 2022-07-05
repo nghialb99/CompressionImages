@@ -1,4 +1,4 @@
-# CompressionImages
+# Compression Images
 # Reduce images size
 
 # Windows Forms App with .NET6-windows project from NghiaLe
