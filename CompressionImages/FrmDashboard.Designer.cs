@@ -1,6 +1,6 @@
 ﻿namespace CompressionImages
 {
-    partial class FrmGetCaptcha
+    partial class FrmDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,15 @@
         {
             SuspendLayout();
             // 
-            // FrmGetCaptcha
+            // FrmDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(697, 442);
+            ClientSize = new Size(800, 450);
+            ControlBox = false;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmGetCaptcha";
-            Text = "FrmGetCaptcha";
+            Name = "FrmDashboard";
+            Text = "FrmDashboard";
             ResumeLayout(false);
         }
 

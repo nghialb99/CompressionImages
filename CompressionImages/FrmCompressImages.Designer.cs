@@ -28,187 +28,187 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new CompressionImages.CustomControls.GradientPanel();
-            this.lblNotice = new System.Windows.Forms.Label();
-            this.lblProgress = new System.Windows.Forms.Label();
-            this.btnSaveJPG = new CompressionImages.CustomControls.ButtonCustom();
-            this.btnSavePNG = new CompressionImages.CustomControls.ButtonCustom();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gradientPanel2 = new CompressionImages.CustomControls.GradientPanel();
-            this.rtbImage = new System.Windows.Forms.RichTextBox();
-            this.gradientPanel1.SuspendLayout();
-            this.gradientPanel2.SuspendLayout();
-            this.SuspendLayout();
+            gradientPanel1 = new CustomControls.GradientPanel();
+            lblNotice = new Label();
+            lblProgress = new Label();
+            btnSaveJPG = new CustomControls.ButtonCustom();
+            btnSavePNG = new CustomControls.ButtonCustom();
+            label3 = new Label();
+            lblTotal = new Label();
+            progressBar1 = new ProgressBar();
+            label1 = new Label();
+            gradientPanel2 = new CustomControls.GradientPanel();
+            rtbImage = new RichTextBox();
+            gradientPanel1.SuspendLayout();
+            gradientPanel2.SuspendLayout();
+            SuspendLayout();
             // 
             // gradientPanel1
             // 
-            this.gradientPanel1.Angle = 0F;
-            this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(204)))), ((int)(((byte)(216)))));
-            this.gradientPanel1.Controls.Add(this.lblNotice);
-            this.gradientPanel1.Controls.Add(this.lblProgress);
-            this.gradientPanel1.Controls.Add(this.btnSaveJPG);
-            this.gradientPanel1.Controls.Add(this.btnSavePNG);
-            this.gradientPanel1.Controls.Add(this.label3);
-            this.gradientPanel1.Controls.Add(this.lblTotal);
-            this.gradientPanel1.Controls.Add(this.progressBar1);
-            this.gradientPanel1.Controls.Add(this.label1);
-            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(697, 85);
-            this.gradientPanel1.TabIndex = 0;
-            this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            gradientPanel1.Angle = 0F;
+            gradientPanel1.BottomColor = Color.FromArgb(93, 204, 216);
+            gradientPanel1.Controls.Add(lblNotice);
+            gradientPanel1.Controls.Add(lblProgress);
+            gradientPanel1.Controls.Add(btnSaveJPG);
+            gradientPanel1.Controls.Add(btnSavePNG);
+            gradientPanel1.Controls.Add(label3);
+            gradientPanel1.Controls.Add(lblTotal);
+            gradientPanel1.Controls.Add(progressBar1);
+            gradientPanel1.Controls.Add(label1);
+            gradientPanel1.Dock = DockStyle.Top;
+            gradientPanel1.Location = new Point(0, 0);
+            gradientPanel1.Name = "gradientPanel1";
+            gradientPanel1.Size = new Size(697, 85);
+            gradientPanel1.TabIndex = 0;
+            gradientPanel1.TopColor = Color.FromArgb(192, 255, 255);
             // 
             // lblNotice
             // 
-            this.lblNotice.AutoSize = true;
-            this.lblNotice.BackColor = System.Drawing.Color.Transparent;
-            this.lblNotice.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNotice.ForeColor = System.Drawing.Color.Red;
-            this.lblNotice.Location = new System.Drawing.Point(12, 66);
-            this.lblNotice.Name = "lblNotice";
-            this.lblNotice.Size = new System.Drawing.Size(42, 15);
-            this.lblNotice.TabIndex = 7;
-            this.lblNotice.Text = "Notice";
+            lblNotice.AutoSize = true;
+            lblNotice.BackColor = Color.Transparent;
+            lblNotice.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNotice.ForeColor = Color.Red;
+            lblNotice.Location = new Point(9, 66);
+            lblNotice.Name = "lblNotice";
+            lblNotice.Size = new Size(42, 15);
+            lblNotice.TabIndex = 7;
+            lblNotice.Text = "Notice";
             // 
             // lblProgress
             // 
-            this.lblProgress.AutoSize = true;
-            this.lblProgress.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProgress.Location = new System.Drawing.Point(72, 41);
-            this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(13, 15);
-            this.lblProgress.TabIndex = 6;
-            this.lblProgress.Text = "0";
+            lblProgress.AutoSize = true;
+            lblProgress.BackColor = Color.Transparent;
+            lblProgress.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProgress.Location = new Point(72, 41);
+            lblProgress.Name = "lblProgress";
+            lblProgress.Size = new Size(13, 15);
+            lblProgress.TabIndex = 6;
+            lblProgress.Text = "0";
             // 
             // btnSaveJPG
             // 
-            this.btnSaveJPG.BackColor = System.Drawing.Color.Transparent;
-            this.btnSaveJPG.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnSaveJPG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(136)))), ((int)(((byte)(144)))));
-            this.btnSaveJPG.BorderRadius = 1;
-            this.btnSaveJPG.BorderSize = 2;
-            this.btnSaveJPG.FlatAppearance.BorderSize = 0;
-            this.btnSaveJPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveJPG.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSaveJPG.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveJPG.Location = new System.Drawing.Point(535, 41);
-            this.btnSaveJPG.Name = "btnSaveJPG";
-            this.btnSaveJPG.Size = new System.Drawing.Size(150, 40);
-            this.btnSaveJPG.TabIndex = 2;
-            this.btnSaveJPG.Text = "Save JPG";
-            this.btnSaveJPG.TextColor = System.Drawing.Color.Black;
-            this.btnSaveJPG.UseVisualStyleBackColor = false;
-            this.btnSaveJPG.Click += new System.EventHandler(this.btnSaveJPG_Click);
+            btnSaveJPG.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            btnSaveJPG.BackColor = Color.Transparent;
+            btnSaveJPG.BackgroundColor = Color.Transparent;
+            btnSaveJPG.BorderColor = Color.FromArgb(62, 136, 144);
+            btnSaveJPG.BorderRadius = 1;
+            btnSaveJPG.BorderSize = 2;
+            btnSaveJPG.FlatAppearance.BorderSize = 0;
+            btnSaveJPG.FlatStyle = FlatStyle.Flat;
+            btnSaveJPG.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSaveJPG.ForeColor = Color.Black;
+            btnSaveJPG.Location = new Point(535, 41);
+            btnSaveJPG.Name = "btnSaveJPG";
+            btnSaveJPG.Size = new Size(150, 40);
+            btnSaveJPG.TabIndex = 2;
+            btnSaveJPG.Text = "Save JPG";
+            btnSaveJPG.TextColor = Color.Black;
+            btnSaveJPG.UseVisualStyleBackColor = false;
+            btnSaveJPG.Click += btnSaveJPG_Click;
             // 
             // btnSavePNG
             // 
-            this.btnSavePNG.BackColor = System.Drawing.Color.Transparent;
-            this.btnSavePNG.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnSavePNG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(136)))), ((int)(((byte)(144)))));
-            this.btnSavePNG.BorderRadius = 1;
-            this.btnSavePNG.BorderSize = 2;
-            this.btnSavePNG.FlatAppearance.BorderSize = 0;
-            this.btnSavePNG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSavePNG.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSavePNG.ForeColor = System.Drawing.Color.Black;
-            this.btnSavePNG.Location = new System.Drawing.Point(379, 41);
-            this.btnSavePNG.Name = "btnSavePNG";
-            this.btnSavePNG.Size = new System.Drawing.Size(150, 40);
-            this.btnSavePNG.TabIndex = 1;
-            this.btnSavePNG.Text = "Save PNG";
-            this.btnSavePNG.TextColor = System.Drawing.Color.Black;
-            this.btnSavePNG.UseVisualStyleBackColor = false;
-            this.btnSavePNG.Click += new System.EventHandler(this.btnSavePNG_Click);
+            btnSavePNG.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            btnSavePNG.BackColor = Color.Transparent;
+            btnSavePNG.BackgroundColor = Color.Transparent;
+            btnSavePNG.BorderColor = Color.FromArgb(62, 136, 144);
+            btnSavePNG.BorderRadius = 1;
+            btnSavePNG.BorderSize = 2;
+            btnSavePNG.FlatAppearance.BorderSize = 0;
+            btnSavePNG.FlatStyle = FlatStyle.Flat;
+            btnSavePNG.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSavePNG.ForeColor = Color.Black;
+            btnSavePNG.Location = new Point(379, 41);
+            btnSavePNG.Name = "btnSavePNG";
+            btnSavePNG.Size = new Size(150, 40);
+            btnSavePNG.TabIndex = 1;
+            btnSavePNG.Text = "Save PNG";
+            btnSavePNG.TextColor = Color.Black;
+            btnSavePNG.UseVisualStyleBackColor = false;
+            btnSavePNG.Click += btnSavePNG_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(167, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Total:";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(167, 41);
+            label3.Name = "label3";
+            label3.Size = new Size(37, 15);
+            label3.TabIndex = 5;
+            label3.Text = "Total:";
             // 
             // lblTotal
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.Location = new System.Drawing.Point(208, 41);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(13, 15);
-            this.lblTotal.TabIndex = 4;
-            this.lblTotal.Text = "0";
+            lblTotal.AutoSize = true;
+            lblTotal.BackColor = Color.Transparent;
+            lblTotal.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTotal.Location = new Point(208, 41);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(13, 15);
+            lblTotal.TabIndex = 4;
+            lblTotal.Text = "0";
             // 
             // progressBar1
             // 
-            this.progressBar1.BackColor = System.Drawing.Color.White;
-            this.progressBar1.Location = new System.Drawing.Point(12, 12);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(673, 23);
-            this.progressBar1.Step = 1;
-            this.progressBar1.TabIndex = 0;
+            progressBar1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            progressBar1.BackColor = Color.White;
+            progressBar1.Location = new Point(12, 12);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(673, 23);
+            progressBar1.Step = 1;
+            progressBar1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(9, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Progress:";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(9, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(57, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Progress:";
             // 
             // gradientPanel2
             // 
-            this.gradientPanel2.Angle = 0F;
-            this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(204)))), ((int)(((byte)(216)))));
-            this.gradientPanel2.Controls.Add(this.rtbImage);
-            this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradientPanel2.Location = new System.Drawing.Point(0, 85);
-            this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Padding = new System.Windows.Forms.Padding(10);
-            this.gradientPanel2.Size = new System.Drawing.Size(697, 357);
-            this.gradientPanel2.TabIndex = 1;
-            this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            gradientPanel2.Angle = 0F;
+            gradientPanel2.BottomColor = Color.FromArgb(93, 204, 216);
+            gradientPanel2.Controls.Add(rtbImage);
+            gradientPanel2.Dock = DockStyle.Fill;
+            gradientPanel2.Location = new Point(0, 85);
+            gradientPanel2.Name = "gradientPanel2";
+            gradientPanel2.Padding = new Padding(10);
+            gradientPanel2.Size = new Size(697, 357);
+            gradientPanel2.TabIndex = 1;
+            gradientPanel2.TopColor = Color.FromArgb(192, 255, 255);
             // 
             // rtbImage
             // 
-            this.rtbImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbImage.Location = new System.Drawing.Point(10, 10);
-            this.rtbImage.Name = "rtbImage";
-            this.rtbImage.Size = new System.Drawing.Size(677, 337);
-            this.rtbImage.TabIndex = 0;
-            this.rtbImage.Text = "";
+            rtbImage.Dock = DockStyle.Fill;
+            rtbImage.Location = new Point(10, 10);
+            rtbImage.Name = "rtbImage";
+            rtbImage.Size = new Size(677, 337);
+            rtbImage.TabIndex = 0;
+            rtbImage.Text = "";
             // 
             // FrmCompressImages
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 442);
-            this.Controls.Add(this.gradientPanel2);
-            this.Controls.Add(this.gradientPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(697, 442);
-            this.MinimumSize = new System.Drawing.Size(697, 442);
-            this.Name = "FrmCompressImages";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmCompressImages";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCompressImages_FormClosing);
-            this.Load += new System.EventHandler(this.FrmCompressImages_Load);
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
-            this.gradientPanel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(697, 442);
+            Controls.Add(gradientPanel2);
+            Controls.Add(gradientPanel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FrmCompressImages";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmCompressImages";
+            FormClosing += FrmCompressImages_FormClosing;
+            Load += FrmCompressImages_Load;
+            gradientPanel1.ResumeLayout(false);
+            gradientPanel1.PerformLayout();
+            gradientPanel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

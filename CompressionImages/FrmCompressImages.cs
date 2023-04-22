@@ -33,11 +33,12 @@ namespace CompressionImages
             progressBar1.Value = 0;
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Multiselect = true;
-            dlg.Filter = "Image Files( *.jpg, *.jpe, *.jfif) | *.jpg; *.jpe; *.jfif";
+            dlg.Filter = "Image Files( *.jpeg, *.jpg, *.jpe, *.jfif) | *.jpeg; *.jpg; *.jpe; *.jfif";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 _checkIsProgressRunning(true);
                 btnSaveJPG.Enabled = false;
+                btnSavePNG.Enabled = false;
                 List<String> list = dlg.FileNames.ToList<String>();
                 lblTotal.Text = list.Count.ToString();
                 progressBar1.Maximum = list.Count;
@@ -62,6 +63,7 @@ namespace CompressionImages
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 btnSavePNG.Enabled = false;
+                btnSaveJPG.Enabled = false;
                 List<String> list = dlg.FileNames.ToList<String>();
                 lblTotal.Text = list.Count.ToString();
                 progressBar1.Maximum = list.Count;
@@ -100,11 +102,14 @@ namespace CompressionImages
 
                     lblProgress.Invoke(new Action(() => { UpdateTb(count); }));
 
+                    //lblRateProgress.Invoke(new Action(() => { UpdateLblRateProgress(count, totalFile); }));
+
                     progressBar1.Invoke(new Action(() => { ActiveProcessbar(); }));
                 }
                 if (count < list.Count) MessageBox.Show("The process was interrupted due to the number of images being too large. You can continue with the images incomplete.", "Notification");
                 lblNotice.Invoke(new Action(() => { UpdateLb("Save PNG completed"); }));
                 btnSaveJPG.Invoke(new Action(() => { btnSaveJPG.Enabled = true; }));
+                btnSavePNG.Invoke(new Action(() => { btnSavePNG.Enabled = true; }));
                 _checkIsProgressRunning(false);
             }
             catch (Exception ex)
@@ -129,7 +134,7 @@ namespace CompressionImages
                         //Image.FromFile(img.Name).Save(fullPath, ImageFormat.Png);
                         Image.FromStream(str).Save(fullPath, ImageFormat.Jpeg);
 
-                        GC.Collect();
+                        //GC.Collect();
                         //Process.Start("notepad.exe", filePath);
                     }
                     File.Delete(list[i]);
@@ -138,11 +143,14 @@ namespace CompressionImages
 
                     lblProgress.Invoke(new Action(() => { UpdateTb(count); }));
 
+                    //lblRateProgress.Invoke(new Action(() => { UpdateLblRateProgress( count, list.Count); }));
+
                     progressBar1.Invoke(new Action(() => { ActiveProcessbar(); }));
                 }
-                if(count < list.Count) MessageBox.Show("The process was interrupted due to the number of images being too large. You can continue with the images incomplete.", "Notification");
+                if (count < list.Count) MessageBox.Show("The process was interrupted due to the number of images being too large. You can continue with the images incomplete.", "Notification");
                 lblNotice.Invoke(new Action(() => { UpdateLb("Save JPG completed"); }));
                 btnSavePNG.Invoke(new Action(() => { btnSavePNG.Enabled = true; }));
+                btnSaveJPG.Invoke(new Action(() => { btnSaveJPG.Enabled = true; }));
                 _checkIsProgressRunning(false);
             }
             catch (Exception ex)
@@ -175,7 +183,7 @@ namespace CompressionImages
 
         private void FrmCompressImages_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(!btnSaveJPG.Enabled || !btnSavePNG.Enabled)
+            if (!btnSaveJPG.Enabled || !btnSavePNG.Enabled)
             {
                 _checkIsProgressRunning(true);
             }
